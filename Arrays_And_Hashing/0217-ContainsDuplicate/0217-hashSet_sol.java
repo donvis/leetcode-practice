@@ -6,6 +6,7 @@ class Solution {
         //   it means there is a duplicate. Therefore, we return true
         //   Else, we add the number into the HashSet and continue the loop.
         // 3.If we loop through the whole list and there is no duplicates found during the check, return false
+        // Time complexity is O(n).
         HashSet<Integer> hash_set = new HashSet<>();
         for(int num : nums){
             if(hash_set.contains(num)){

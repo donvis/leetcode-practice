@@ -1,5 +1,9 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
+        // Create two hashmaps for string s and t
+        // First check if length of s and t is equal. if not, return false as these are not anagrams.
+        // now we can just use 1 for loop to check if the hashmaps contains the character.
+        // if hash maps don't contain the current character, add it into the hashmap, otherwise increment value of key by 1.
         Map<Character,Integer> map_S = new HashMap<>();
         Map<Character,Integer> map_T = new HashMap<>();
         if(s.length() != t.length()){
